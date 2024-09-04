@@ -1,0 +1,221 @@
+.p1 p{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.p1 blockquote{
+    margin-left: 0px;
+    width: 98.8%;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    border-left: solid;
+    border-color: rgb(157, 157, 157);
+    font-style: italic;
+}
+
+.box{
+    background-color: rgb(211, 211, 211);
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid;
+    border-color: rgb(171, 169, 169);
+    border-radius: 10px;
+    box-shadow: 5px 4px 5px 2px rgb(66, 64, 64);
+}
+
+.box2{
+    background-color: rgb(244, 190, 102);
+    border-width: 5px;
+    border-color: rgb(115, 106, 106);
+    margin-bottom: 20px;
+}
+
+.relativa{
+    position: relative;
+    background-color: rgb(177, 216, 222);
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.absoluta{
+    position: absolute;
+    background-color: rgb(59, 138, 145);
+    top: 23%;
+    left: 52%;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #99aaff; 
+    padding: 5px;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.animacion{
+    background-color: red;
+    height: 30px;
+    width: 500px;
+    border: transparent;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+.animacion:hover{
+    cursor: pointer;
+    background-color: rgb(235, 159, 159);
+    border: 1px solid red;
+}
+
+.mover{
+    background-color: greenyellow;
+    border: 1px solid green;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    animation: xd 2s infinite;
+}
+
+@keyframes xd {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(500px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.punto{
+    margin: 10px 10px 10px 0px;
+    background-color: rgb(231, 230, 230);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px 2px gray;
+}
+
+body main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+header{
+    background-color: rgb(40, 39, 39);
+    width: 100%;
+    height: 70px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(164, 163, 163);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 625px){
+    
+    h2{
+        font-size: 18px;
+    }
+    
+    .relativa{
+        position: relative;
+        background-color: rgb(177, 216, 222);
+        padding: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .absoluta{
+        position: absolute;
+        background-color: rgb(59, 138, 145);
+        padding: 10px;
+        top: 50%;
+        left: 15%;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+    }
+    
+    .mover{
+        background-color: rgb(203, 87, 235);
+        border: 1px solid rgb(214, 80, 125);
+        border-radius: 50px;
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        animation: xd2 2s infinite;
+    }
+    
+    @keyframes xd2 {
+        0%{
+            transform: translate(0);
+        }
+        50%{
+            transform: translate(400px);
+        }
+        100%{
+            transform: translate(0);
+        }
+    }
+
+    .punto{
+        margin: 10px;
+        background-color: rgb(231, 230, 230);
+        border-radius: 5px;
+        box-shadow: 5px 2px 2px 2px gray;
+    }
+    
+    body main{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    header p{
+        color: rgb(234, 163, 255);
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    header{
+        background-color: rgb(40, 39, 39);
+        width: 100%;
+        height: 70px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px 2px black;
+    }
+
+    body{
+        background-color: rgb(228, 192, 238);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
